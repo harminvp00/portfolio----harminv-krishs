@@ -1,0 +1,44 @@
+     header {
+            height: 200px;
+
+
+        }
+
+        img {
+            height: 40px;
+            width: 60px;
+
+        }
+
+        .first {
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .first img {
+            height: 1000px;
+            width: 100%;
+            position: relative;
+            bottom: 135px;
+
+            background-repeat: no-repeat;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 12%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: white;
+        }
+
+        .text h1 {
+            font-size: 36px;
+        }
+        .text p{
+            font-size: 20px;
+        }

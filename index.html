@@ -1,194 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        header {
-            height: 200px;
-
-
-        }
-
-        img {
-            height: 40px;
-            width: 60px;
-
-        }
-
-        .first {
-            align-items: center;
-            justify-content: center;
-
-        }
-
-        .first img {
-            height: 670px;
-            width: 100%;
-            position: relative;
-            bottom: 135px;
-
-            background-repeat: no-repeat;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .text {
-            position: absolute;
-            top: 63%;
-            left: 27%;
-
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: white;
-        }
-
-        .text h1 {
-            font-size: 36px;
-        }
-
-        .p p {
-            font-size: 20px;
-            padding-left: 12%;
-
-        }
-
-        .item {
-            background-color: gray;
-            padding: 20px;
-            width: 300px;
-            min-height: 350px;
-            border-radius: 10px;
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease-out;
-            text-align: center;
-
-        }
-
-
-
-
-        .item:hover {
-            box-shadow: 0px 10px 20px rgba(3, 44, 250, 0.3);
-            transform: scale(1.05);
-        }
-
-        .item-lang img {
-            height: 227px;
-            width: 299px;
-        }
-
-
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 77px;
-            row-gap: 25px;
-
-        }
-
-        .paregraf p {
-            color: beige;
-        }
-
-        @media screen and (max-width: 1145px) {
-            .grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+    <title> Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
-
 <body>
-
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="video/skils.jpeg" alt="">
-
-            </div>
-        </nav>
-    </header>
-
-    <main>
-
-
-        <section class="first">
-
-            <img src="video/nature_1.jpg" alt="">
-            <div class="text">
-                <h1>Human Health And Fitneses
-                    About Gaidense
-                </h1>
-
-
-                <div class="p">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eligendi consequatur earum illum unde
-                        aliquam non, porro saepe suscipit sequi ipsum repellendus laborum pariatur quasi nihil? Quia
-                        adipisci consequuntur quos.</p>
-                </div>
-            </div>
-
-        </section>
-
-
-
-    </main>
-
-    <div class="grid">
-        <div class="item">
-            <div class="item-lang"><img src="OIP.jpeg" alt=""></div>
-            <div class="paregraf">
-                <p>Hello i am krish i am a programmer
-                    Hello i am krish i am a programmerHello i am krish i am a programmer </p>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="item-lang"><img src="OIP.jpeg" alt=""></div>
-            <div class="paregraf">
-                <p>Hello i am krish i am a programmer
-                    Hello i am krish i am a programmerHello i am krish i am a programmer</p>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="item-lang"><img src="OIP.jpeg" alt=""></div>
-            <div class="paregraf">
-                <p>Hello i am krish i am a programmer
-                    Hello i am krish i am a programmerHello i am krish i am a programmer </p>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="item-lang"><img src="OIP.jpeg" alt=""></div>
-            <div class="paregraf">
-                <p>Hello i am krish i am a programmer
-                    Hello i am krish i am a programmerHello i am krish i am a programmer</p>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="item-lang"><img src="OIP.jpeg" alt=""></div>
-            <div class="paregraf">
-                <p>Hello i am krish i am a programmer
-                    Hello i am krish i am a programmerHello i am krish i am a programmer </p>
-            </div>
-        </div>
-
-        <div class="item">
-            <div class="item-lang"><img src="OIP.jpeg" alt=""></div>
-            <div class="paregraf">
-                <p>Hello i am krish i am a programmer
-                    Hello i am krish i am a programmerHello i am krish i am a programmer</p>
-            </div>
-        </div>
-
-
+   <header>
+    <nav>
+    <div class="logo">
+        <img src="Images/skils.jpeg.jpg">
     </div>
+    <div class="right-navbar">
+        <ul>
+            <li> <a href="#">Home</a> </li>
+            <li> <a href="#">eduacation</a> </li>
+            <li> <a href="#">skill & Projects</a> </li>
+            <li> <a href="#">about us</a> </li>
+            
+        </ul>
+    </div>
+    </nav>
+   </header>
 
+   <main>
+    <div class="about-person">
+        <div class="his-image">
+            <img src="Images/WhatsApp Image 2024-03-08 at 16.06.01_fd9c7f1a.jpg" alt="profile-image">
+        </div>
+        <div class="his-details">
+           <h1>KRISH SOLANAKI</h1>
+           <h3>COMPUTER ENGINEERING</h3>
+        </div>
+        <div class="his-description">
+           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aliquam, fugiat error voluptatum, blanditiis veritatis animi nulla quae totam officiis sit iusto provident sunt earum, recusandae rerum itaque. Praesentium expedita, sit maxime eum beatae eaque quibusdam temporibus rerum molestiae fugit suscipit provident. Perspiciatis deleniti cumque beatae iure qui quam, corrupti sunt ratione dolorum quae rem nisi consequatur illo alias esse sequi eaque quod animi eum tempora voluptates provident. Eligendi error quod nemo facilis laudantium vel tenetur eaque, nihil non necessitatibus velit consequuntur temporibus iste debitis? Vero sunt nesciunt rerum? Vitae doloribus perspiciatis ipsum ea id pariatur tempora, aliquam eum sed.</p>
+        </div>
+    </div>
+   </main>
 </body>
-
 </html>

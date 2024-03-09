@@ -1,109 +1,171 @@
-header {
-    height: 200px;
-
-
-}
-
 *{
     margin: 0;
     padding: 0;
-    
-}
-body{
-    background-color: bisque;
-}
- 
-
-.logobox{
-    /* background-color: rgb(0, 255, 60); */
-    left: 23px;
-
-
-}
-.headings ul {
-    display: flex;
-    gap: 56px;
-    list-style: none;
-    font-size: 20px;
-    color: white;    
 }
 
-.headings ul a{
-    color: azure;
-}
-
-
-
-
-
-
-.mainbox{
-    background-color: grey;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    gap: 50vh;
-    height: 65px;
-
-    
-}
-.btn{
-    display: flex;
-    gap: 12px;
-    font-size: 20px;
-    height: 25px;
-    
-    border-radius: 15px;
-    text-align: center;
-}
-
-
-img {
-    height: 40px;
-    width: 60px;
-
-}
-
-.first {
-    align-items: center;
-    justify-content: center;
-
-}
-
-.first img {
-    height: 670px;
+.container{
+    height: 100vh;
     width: 100%;
+    background-image: url('video/krish man img.jpeg');
+    background-position: center;
+    background-size: cover;
+    padding-left: 5%;
+    padding-right: 5%;
+    box-sizing: border-box;
     position: relative;
-    bottom: 135px;  
-    /* 135 */
 
-    background-repeat: no-repeat;
+}
+
+.navbar{
+    width: 100%;
+    height: 15vh;
+    margin: auto;
+    display: flex;
     align-items: center;
-    justify-content: center;
 }
 
-.text {
-    position: absolute;
-    top: 63%;
-    left: 24%;
-    width: 471px;
-
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
+.logo{
+    width: 150px;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 50%;
 }
 
-.text h1 {
-    font-size: 36px;
+.cart{
+    width: 56px;
+    height: 29px;
+    cursor: pointer;
+    border-radius: 14px;
+    background: linear-gradient(45deg, #fe87f3, #77f0ff);
+
 }
 
-.p p {
+nav{
+    flex: 1;
+    padding-left: 60px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0px 20px;
+    font-size: 18px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #333;
+}
+
+
+
+/* .content h1{
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+    animation-name: krishanimation;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-iteration-count: 3;
+    animation-timing-function: cubic-bezier(0.39, 0.08, 0.76, 0.99);;
+
+
+
+} */
+
+.content h1 {
+    font-size: 60px;
+    font-weight: 100;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    color: #232d60;
+    animation-name: krishanimation;
+    animation-duration: 3s;
+    animation-delay: 0.5s; /* Adjust as needed */
+    animation-fill-mode: forwards; /* Keeps the final state after animation */
+    opacity: 0; /* Initially invisible */
+    animation-iteration-count: infinite;
+
+}
+
+
+.content p{
     font-size: 20px;
-    padding-left: -5%;
-    padding-top: 15px;
+  
+    color: #6a7199;
+    animation-name: krishanimation;
+    animation-duration: 3s;
+    animation-delay: 0.5s; /* Adjust as needed */
+    animation-fill-mode: forwards; /* Keeps the final state after animation */
+    opacity: 0; /* Initially invisible */
+    animation-iteration-count: infinite;
+
+    
 
 }
 
+.content{
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.content .btn{
+    display: inline-block;
+    background: linear-gradient(45deg, #87adfe, #ff77cd );
+    border-radius: 6px;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 8px 22px rgba(94,28,68,0.15);
+    
+}
+
+.arrow-icons{
+    margin-top: 40px;
+    display: flex;
+}
+
+.arrow-icons img{
+    width: 40px;
+    margin-right: 25px;
+    animation-name: krishanimation;
+    animation-duration: 3s;
+    animation-delay: 0.5s; 
+    animation-fill-mode: forwards; /* Keeps the final state after animation */
+    opacity: 0; /* Initially invisible */
+    
+}
+
+.feature-img{
+    height: 60%;
+    position: absolute;
+    bottom: 150px;
+    right: 80px;
+    border-radius: 50%;
+}
+
+
+
+@keyframes krishanimation {
+    from {
+        transform: translateY(150%);
+        opacity: 0; /* Starting from invisible */
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1; /* Ending at fully visible */
+    }
+}
+
+
+
+.texts{
+    padding-top: 78px;
+   
+}
 .item {
     background-color: gray;
     padding: 20px;
@@ -113,8 +175,9 @@ img {
     box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease-out;
     text-align: center;
-
+   
 }
+
 
 
 
@@ -131,11 +194,15 @@ img {
 }
 .item-lang{
     height: 272px;
+
 }
 
 .item-lang img {
     height: 227px;
     width: 299px;
+    border-radius: 10px;
+
+
     /* object-fit: cover; */
    
 }
@@ -147,64 +214,14 @@ img {
     gap: 77px;
     row-gap: 25px;
     padding-top: 54px;
+    padding-left: 100px;
     align-items: center;
     justify-content: center;
-    /* bottom: 12vh; */
+   
 
 }
 
 .paregraf H2 {
     color: beige;
-
-}
-
-@media screen and (max-width: 1145px) {
-    .grid {
-        grid-template-columns: 1fr;
-    }
-}
-.h1{
-    bottom: 12px;
-}
-.second{
-    /* background-color: aqua; */
-    /* height: 90vh; */
-    /* width: 60px; */
-    justify-content: center;
-    align-items: center;
-    height: auto;
-    gap: 186px;
-    display: flex;
-}
-.box{
-    height: 50vh;
-    width: auto;
-    /* background-color: blueviolet; */
-
-
-
-}
-.box ul li{
-    font-size: 20px;
-}
-.box1{
-    height: 50vh;
-    width: auto;
-    /* background-color: rgb(242, 56, 5); */
-
-
-
-}
-.box1 img{
-    height: 500px;
-    width: 500px;
-    object-fit: cover;
-    overflow: hidden;
-    border-radius: 50%;
-
-}
-
-.container2{
-    padding-left: 60px;
-    padding-top: 12px;
+   
 }
